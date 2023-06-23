@@ -15,8 +15,8 @@
 #define CAPS_LOCK       0x73
 
 PS2Keyboard keyboard;
-unsigned int scanCodesTable[256];
-unsigned int extScanCodesTable[256];
+unsigned char scanCodesTable[256];
+unsigned char extScanCodesTable[256];
 
 void setup() {
 #ifdef SERIAL_DEBUG
