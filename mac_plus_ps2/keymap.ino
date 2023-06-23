@@ -62,20 +62,20 @@ void initScancodes() {
   scanCodesTable[0x4a] = 0x59; // ?/
   scanCodesTable[0x59] = 0x71; // right shift
   
-  scanCodesTable[0x14] = 0x75; // left ctrl -> option
-  scanCodesTable[0x11] = 0x75; // left alt  -> option
+  scanCodesTable[0x14] = 0x6f; // left ctrl -> option
+  scanCodesTable[0x11] = 0x6f; // left alt  -> option
   scanCodesTable[0x29] = 0x63; // space
   
-  extScanCodesTable[0x11] = 0x75; // right alt  -> option
-  extScanCodesTable[0x14] = 0x75; // right ctrl -> option
+  extScanCodesTable[0x11] = 0x6f; // right alt  -> option
+  extScanCodesTable[0x14] = 0x6f; // right ctrl -> option
   
-  extScanCodesTable[0x5b] = 0x6f; // left windows -> cmd
-  extScanCodesTable[0x1f] = 0x6f; // left windows -> cmd
-  extScanCodesTable[0x8b] = 0x6f; // left windows -> cmd
+  extScanCodesTable[0x5b] = 0x75; // left windows -> cmd
+  extScanCodesTable[0x1f] = 0x75; // left windows -> cmd
+  extScanCodesTable[0x8b] = 0x75; // left windows -> cmd
   
-  extScanCodesTable[0x5c] = 0x6f; // right windows -> cmd
-  extScanCodesTable[0x27] = 0x6f; // right windows -> cmd
-  extScanCodesTable[0x8c] = 0x6f; // right windows -> cmd
+  extScanCodesTable[0x5c] = 0x75; // right windows -> cmd
+  extScanCodesTable[0x27] = 0x75; // right windows -> cmd
+  extScanCodesTable[0x8c] = 0x75; // right windows -> cmd
   
   scanCodesTable[0x77] = 0x0f | NUMPAD;    // numlock -> numpad clear
   extScanCodesTable[0x71] = 0x0f | NUMPAD; // delete -> numpad clear
