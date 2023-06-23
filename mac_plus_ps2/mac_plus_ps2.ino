@@ -21,6 +21,7 @@ unsigned char extScanCodesTable[256];
 void setup() {
 #ifdef SERIAL_DEBUG
   Serial.begin(9600);
+  Serial.println("Begin serial debug");
 #endif
   initScancodes();
 
